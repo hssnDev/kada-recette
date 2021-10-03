@@ -7,9 +7,8 @@ body{
 }
 div.contenu {
     background-color: white;
-    margin: 80px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;      
+    margin: 30px 2% 30px 2%;
+    padding: 0 20px 20px 15px;
     box-shadow: 0px 5px 5px 5px rgb(63, 62, 62);  
     overflow: visible;      
 }
@@ -61,11 +60,11 @@ table.infos {
     width: 100%;
     color: white; 
     background: #6C829DC0; 
-    height: 80px;" 
+    height: 40px;
 }
 table.infos td {
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     vertical-align: top;
     padding: 5px;
 }
@@ -80,11 +79,11 @@ img.infos {
     object-fit: cover;   
 }
 div.colonne {
-    width: 45%;
-    display: inline-block;
+    width: 100%;
+    display: flexbox;
 }
 div.colonne1 {
-    margin-right: ;
+    margin-right: 0;
 }
 div.colonne2 {
     float: right;
@@ -134,6 +133,32 @@ td.etape_prepa {
 table.preparation tr {
     height: 40px;
 }
+ /* style pour ordinateur */
+@media only screen and (min-width: 768px) {
+    body {
+        min-width: 350px;  
+        margin: 80px 10% 80px 10%;
+        padding: 0 30px 30px 30px;    
+    }
+    div.colonne {
+        width: 45%;
+        display: inline-block;
+    }
+    table.infos td {
+        font-size: 14px;
+    }
+    table.infos th {
+        font-size: 16px;
+    }
+    table.infos { 
+        height: 80px;
+  }
+  @media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 495px;    
+    }
 
 
 
